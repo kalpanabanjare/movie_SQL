@@ -1,2 +1,74 @@
-RSVP Movie SQL
+# RSVP Movies Data Analysis
 
+## Overview
+
+This project focuses on analyzing a dataset from RSVP Movies, an Indian film production company, to extract insights that will aid in their upcoming global film project in 2022. The analysis utilizes SQL to examine data from movies released in the past three years, aiming to inform data-driven decision-making.
+
+## Project Structure
+
+```
+rsvp-movies-data-analysis/
+├── data/
+│   ├── imdb_dataset.csv         # Raw dataset containing movie details
+├── sql_scripts/
+│   ├── analysis_script.sql      # SQL scripts for data analysis
+├── reports/
+│   ├── executive_summary.pdf     # Summary of findings and recommendations
+└── README.md                    # Project documentation
+```
+
+## Dataset Description
+
+The dataset contains information about movies produced by RSVP Movies, including:
+
+- **Title**: Name of the film
+- **Release Date**: Date of release
+- **Box Office Earnings**: Revenue generated (in USD)
+- **Genres**: Film categories (e.g., Action, Comedy)
+- **Ratings**: Audience ratings (e.g., from IMDb)
+- **Country**: Production country
+- **Duration**: Film length (in minutes)
+
+## Getting Started
+
+### Prerequisites
+
+- **MySQL Server**: For database setup and query execution.
+- **MySQL Workbench**: For managing the database and running SQL scripts.
+
+### Installation
+
+1. **Setup the Database**:
+   - Open MySQL Workbench and create a new schema named `rsvp_movies`.
+   - Import the dataset into the database.
+
+## SQL Analysis
+
+The analysis is structured around key SQL queries aimed at extracting meaningful insights from the dataset. 
+
+### Analysis Focus Areas
+
+- **Total Box Office Earnings**: Assess the overall financial performance of the movies.
+- **Average Ratings by Genre**: Identify which genres receive the best audience ratings.
+- **Movies Released Per Year**: Track production trends over time.
+- **Top Grossing Movies**: Highlight the highest earners to inform future projects.
+- **Budget vs. Earnings**: Examine the relationship between production budgets and box office returns.
+
+## Key Insights
+
+1. **Total Box Office Growth**: A significant increase in total earnings over the analyzed period indicates growing audience interest.
+2. **Genre Popularity**: Action and Comedy genres consistently outperform others in terms of box office earnings and audience ratings.
+3. **Release Trends**: The number of movies released per year shows an upward trend, suggesting increased production capacity.
+
+## Recommendations
+
+1. **Focus on Popular Genres**: Prioritize film projects in Action and Comedy, as they have demonstrated higher audience engagement.
+2. **Innovative Storytelling**: Explore narratives that resonate well with viewers without necessitating high production budgets.
+3. **Market Analysis**: Conduct targeted market analysis in regions where similar genres have shown success to optimize marketing strategies.
+
+## Future Work
+
+Further analysis could include:
+
+- **Sentiment Analysis**: Evaluating audience reviews to gain deeper insights into viewer preferences.
+- **Predictive Modeling**: Using historical data patterns to predict future box office performance.
